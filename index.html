@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lampung Beach Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body> 
+    <nav>
+      <div class="layar-dalam">
+        <div class="logo">
+          <a href=""><img src="asset/logo-putih.png" class="putih" /></a>
+          <a href=""><img src="asset/logo-putih.png" class="hitam" /></a>
+        </div>
+        <div class="menu">
+          <a href="#" class="tombol-menu">
+            <span class="garis"></span>
+            <span class="garis"></span>
+            <span class="garis"></span>
+          </a>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#blog">List</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+    <div class="layar-penuh">
+      <header id="home">
+        <div class="overlay"></div>
+        <video autoplay muted loop>
+          <source src="asset/video-lampung.mp4" type="video/mp4" />
+        </video>
+        <div class="intro">
+          <h3>Lampung Beach Web</h3>
+          <p>
+            Web travel pantai di lampung
+          </p>
+          <p>
+            <a href="" class="tombol">SELENGKAPNYA</a>
+          </p>
+        </div>
+      </header>
+      <main>
+        <section id="aboutus">
+          <div class="layar-dalam">
+            <h3 class="title-font">About Us</h3>
+            <p class="ringkasan">
+              Tentang kami
+            </p>
+            <div class="konten-isi">
+              <p style="color:var(--warna4)">
+                Website adalah keseluruhan halamanhalaman web yang terdapat dalam sebuah domain yang mengandung informasi. 
+                Website biasanya dibangun atas banyak halaman web yang saling berhubungan antara satu halaman web dengan halaman web yang lainnya yang disebut hyperlink,
+                sedangkan media penghubung berupa teks di sebut hyperteks. 
+                Karena kita ingin meggabungkan bidang pariwisata dengan bidang teknologi oleh sebab itu kita membuat website Lampung Beach.
+                Lampung beach adalah sebuah website yang memuat tentang data-data pantai yang ada di kota Bandar Lampung, tujuan kita membuat website ini untuk memperkenalkan pantai yang di kota Bandar Lampung. 
+                Selain itu juga kita mempermudah para pengunjung yang sedang mecari destinasi wisata pantai yang ada di kota Bandar Lampung.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="abuabu" id="goals">
+          <div class="layar-dalam support">
+            <div>
+              <img src="asset/logo1.png" class="invert" />
+              <h6>Kepercayaan</h6>
+              <p>
+                Terciptanya kepercayaan antar customer dan penyedia pariwisata pantai di lampung
+              </p>
+            </div>
+            <div>
+              <img src="asset/image72.png" class="invert"/>
+              <h6>Informasi</h6>
+              <p>
+                Memberikan informasi kepada pengunjung mengenai pariwisata pantai di lampung 
+              </p>
+            </div>
+            <div>
+              <img src="asset/image727.png" class="invert"/>
+              <h6>Perkenalan</h6>
+              <p>
+                Memperkenalkan pariwisata pantai di lampung
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="layar-dalam" style="text-align: center;">
+            <h3 class="title-font">Gallery</h3>
+            <p class="ringkasan">
+              Beberapa destinasi wisata pantai yang ada di lampung yang dapat anda kunjungi, 
+              atau bisa dijadikan destinasi favorit anda untuk berlibur di daerah lampung 
+              yang tentunya dapat memanjakan mata anda saat melihatanya.
+            </p>
+          </div>
+        </section>
+        <section id="gallery">
+
+          <!-- scrolling view -->
+          <style>
+            .scrolling-wrapper {
+              display: flex;
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              margin: 0 -10px;
+            }
+            .scrolling-wrapper::-webkit-scrollbar {
+              display: none;
+            }
+            .scrolling-wrapper > div {
+              flex: 0 0 auto;
+              margin: 0 10px;
+            }
+            .scrolling-wrapper > div > img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+          </style>
+          <!-- scrolling view -->
+
+          <div class="scrolling-view">
+            <div class="scrolling-wrapper">
+              <!-- Gallery Using Json-->
+              <script>
+                // import dari file json
+                fetch("asset/json/pantai.json")
+                  .then((res) => res.json())
+                  .then((data) => {
+                    // console.log(data);
+                    let gallery = "";
+                    data.forEach((item) => {
+                      gallery += `
+                      <div><img src="${item.Foto}" /></div>
+                      `;
+                    });
+                    document.querySelector(".scrolling-wrapper").innerHTML = gallery;
+                  });
+              </script>
+              </div>
+            </div>
+          
+        </section>
+        <section class="quote">
+          <div class="layar-dalam">
+            <p>Lampung beserta deretan pantainya</p>
+          </div>
+        </section>
+        <section id="team">
+          <div class="layar-dalam">
+            <h3 class="title-font">Our Team</h3>
+            <p class="ringkasan">
+              Kami adalah mahasiswa pertukaran mahasiswa di universitas teknokrat indonesia
+            </p>
+            <div class="tim">
+              <!-- Team Using Json-->
+              <script>
+                // import dari file json
+                fetch("asset/json/profile.json")
+                  .then((res) => res.json())
+                  .then((data) => {
+                    // console.log(data);
+                    let tim = "";
+                    data.forEach((item) => {
+                      tim += `
+                      <div>
+                        <img src="${item.Foto}" />
+                        <h6 class="title-font">${item.Nama}</h6>
+                        <span class="title-font">${item.Asal}</span>
+                      </div>
+                      `;
+                    });
+                    document.querySelector(".tim").innerHTML = tim;
+                  });
+              </script>
+            
+            </div>
+          </div>
+        </section>
+        <section class="abuabu" id="support">
+          <div class="layar-dalam support">
+            <div>
+              <p>
+                Universitas Hayam Wuruk Perbanas Surabaya
+              </p>
+            </div>
+            <div>
+              <p>
+              Universitas Hamzanwadi
+               </p>
+            </div>
+            <div>
+              <p>
+              Universitas Kuningan
+              </p>
+            </div>
+            <div>
+              <p>
+             Universitas Singaperbangsa Karawang
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="blog">
+          <div class="layar-dalam">
+            <h3 class="title-font">List Pantai</h3>
+            <p class="ringkasan">
+              Beberapa Pantai Yang Dapat Memanjakan Mata Anda
+            </p>
+            <div class="blog">
+              <script>
+                // import dari file json
+                fetch("asset/json/pantai.json")
+                  .then((res) => res.json())
+                  .then((data) => {
+                    // console.log(data);
+                    let gallery = "";
+                    data.forEach((item) => {
+                      gallery += `
+                      <div class="area">
+                        <div
+                          class="gambar"
+                          style="background-image: url('${item.Foto}')"
+                        ></div>
+                        <div class="text">
+                          <article class="title-font">
+                            <h4><a href="${item.GMaps}">${item.NamaPantai}</a></h4>
+                            <p>
+                              ${item.Alamat}
+                            </p>
+                            <button class="btn"><strong><a href="${item.GMaps}" style="color:white;">Lihat di Google Maps</a></strong></button>
+                          </article>
+                        </div>
+                      </div>
+                      `;
+                    });
+                    document.querySelector(".blog").innerHTML = gallery;
+                  });
+                  
+              </script>
+              
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="contact">
+        <div class="layar-dalam">
+          <div>
+            <h5>Info</h5>
+            Semua isi yang tercantum di dalam situs ini bertujuan untuk memberikan informasi dan bukan sebagai tujuan komersial.
+          </div>
+          <div>
+            <h5>Contact</h5>
+           <li> WhatsApp:+62812-2325-9293 (Heru Triana)</li>
+            <li>WhatsApp:+62 895-6060-59755 (Arya Lesmana)</li>
+            <li>WhatsApp:+62 878-6152-7014 (Hamzanwadi)</li>
+            <li>WhatsApp:+62 897-3800-645 (Clariza)</li>
+          </div>
+          <div>
+            <h5>Help</h5>
+            Jika butuh bantuan atau ada kendala bisa langsung hubungi nomor yang sudah tertera.
+          </div>
+          <div>
+            <h5>Sitemap</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.226620207035!2d105.25562721376455!3d-5.382383996095995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dadc7970b277%3A0x5b1fe57f83b6416c!2sUniversitas%20Teknokrat%20Indonesia!5e0!3m2!1sid!2sid!4v1672213749885!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="layar-dalam">
+          <div class="copyright">&copy; 2022 Lampung Beach Web</div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

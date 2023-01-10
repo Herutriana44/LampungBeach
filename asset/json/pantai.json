@@ -1,0 +1,62 @@
+[
+  {
+    "NamaPantai": "Pantai Srengsem KAI",
+    "Alamat": "AH25 No.32",
+    "GMaps": "https://goo.gl/maps/eMwDBQxfuK1zDLgi6",
+    "Foto": "asset/images/srengsemkai.jpeg"
+  },
+  {
+    "NamaPantai": "Pantai Tiska",
+    "Alamat": "AH25 No.32",
+    "GMaps": "https://goo.gl/maps/8YHgCpKtmEqCgrxr7",
+    "Foto": "asset/images/tiska.jpeg"
+  },
+  {
+    "NamaPantai": "Pantai Duta Wisata",
+    "Alamat": "Jl.Laksamana R.E.Martadinata",
+    "GMaps": "https://goo.gl/maps/QELbrdjNFzN3pyfg7",
+    "Foto": "asset/images/dutawisata.jpeg"
+  },
+  {
+    "NamaPantai": "Pantai Selaki",
+    "Alamat": "Jl.Soekarno Hatta KM 18",
+    "GMaps": "https://goo.gl/maps/WY5i8xqHUBLoUrSc9",
+    "Foto": "asset/images/selaki.jpeg"
+  },
+  {
+    "NamaPantai": "Pantai Puri Gading",
+    "Alamat": "Jl. Laksamana R.E.Martadinata",
+    "GMaps": "https://goo.gl/maps/pCTCK5kJjVJHYYZA7",
+    "Foto": "asset/images/purigadi.jpeg"
+  },
+  {
+    "NamaPantai": "Pantai Tanjung Setia",
+    "Alamat": "Jl.Lintas Barat Sumatera",
+    "GMaps": "https://goo.gl/maps/JT8XPXHgfPvntBsi9",
+    "Foto": "asset/images/tanjungsetia.jpeg"
+  },
+  {
+    "NamaPantai": "Pantai Kiara",
+    "Alamat": "Jl.Raya Way Ratay",
+    "GMaps": "https://goo.gl/maps/ZspNL5ENYRgX3KMB9",
+    "Foto": "asset/images/kiara.jpeg"
+  },
+  {
+    "NamaPantai": "Pantai Gigi Hiu",
+    "Alamat": "Negeri Kelumbayan",
+    "GMaps": "https://goo.gl/maps/iDJGnRZMq1BY9TXeA",
+    "Foto": "asset/images/gigihiu.jpeg"
+  },
+  {
+    "NamaPantai": "Pantai Pulau Pasir",
+    "Alamat": "Jl.Rangai Tri Tunggal",
+    "GMaps": "https://goo.gl/maps/PYWhTiuXy3NweHSn9",
+    "Foto": "asset/images/pulaupasir.jpeg"
+  },
+  {
+    "NamaPantai": "Pantai Sari Ringgung",
+    "Alamat": "Jl.Way Ratai KM.14",
+    "GMaps": "https://maps.app.goo.gl/ZH1nw8d8EU1VAKbV9",
+    "Foto": "asset/images/sariringgung.jpeg"
+  }
+]

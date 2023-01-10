@@ -1,0 +1,26 @@
+[
+    {
+      "Nama": "Clariza Arifianti",
+      "Instagram": "https://www.instagram.com/clarizarf",
+      "Foto": "asset/images/team/clariza.jpg",
+      "Asal":"Jawa Timur"
+    },
+    {
+      "Nama": "Hamzanwahdi",
+      "Instagram": "https://www.instagram.com/zannwd",
+      "Foto": "asset/images/team/hamzanwahdi.jpeg",
+      "Asal":"Nusa Tenggara Barat"
+    },
+    {
+      "Nama": "Arya Lesmana",
+      "Instagram": "https://www.instagram.com/Abangarya_official",
+      "Foto": "asset/images/team/arya.jpeg",
+      "Asal":"Jawa Barat"
+    },
+    {
+      "Nama": "Heru Triana",
+      "Instagram": "https://www.instagram.com/herutriana44",
+      "Foto": "asset/images/team/heru.png",
+      "Asal":"Jawa Barat"
+    }
+  ]
